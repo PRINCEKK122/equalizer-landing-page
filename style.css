@@ -40,6 +40,8 @@ body {
     background-color: hsl(244, 23%, 12%);
 }
 
+
+
 .btn-secondary {
     background-color: hsl(20, 33%, 98%);
     color: hsl(244, 23%, 12%);
@@ -48,10 +50,9 @@ body {
 /* Header Styles */
 header {
     padding: 4rem 2.4rem;
-    max-width: 60rem;
     background-image: url("./assets/bg-main-mobile.png");
     background-repeat: no-repeat;
-    background-position: bottom -10rem right -21rem;
+    background-position: bottom -5rem right -21rem;
 }
 
 header img {
@@ -74,30 +75,27 @@ header p {
     margin-top: 15rem;
 }
 
-.showcase-images {
+.showcase-image {
     height: 60rem;
     background-color: hsl(244, 23%, 12%);
     text-align: center;
+    background-image: url("./assets/bg-pattern-2.svg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 27rem;
 }
 
-.showcase-images img:first-child {
-    position: relative;
-    z-index: 1;
+.showcase-image img {
     width: 20.8rem;
     height: 43rem;
     transform: translateY(-25%);
-}
-
-.showcase-images img:last-child {
-    width: 28rem;
-    transform: translateY(-103.5%);
 }
 
 .showcase-card {
     background-color: hsl(12, 94%, 65%);
     color: hsl(20, 33%, 98%);
     padding: 4.8rem 3.7rem 4.8rem 3.6rem;
-    transform: translateY(-37.5%);
+    transform: translateY(-38%);
 }
 
 .showcase-card h2 {
@@ -125,8 +123,20 @@ header p {
     font-weight: 700;
 }
 
+.platform-container a {
+    transition: background-color 300ms;
+}
+
 .apple {
     margin-bottom: 1.6rem;
+}
+
+.apple a:hover {
+    background-color: hsl(177, 68%, 64%);
+}
+
+.android a:hover {
+    background-color: hsl(33, 100%, 70%);
 }
 
 .apple span,
@@ -138,11 +148,7 @@ header p {
 
 footer {
     padding: 0 2.4rem;
-    transform: translateY(-50%);
-}
-
-footer img {
-    margin-bottom: 3.2rem;
+    transform: translateY(-55%);
 }
 
 footer p {
@@ -157,6 +163,13 @@ footer .social-media-handles {
     margin-top: 6.4rem;
     display: flex;
     gap: 2rem;
-    margin-bottom: 4rem;
 }
 
+footer .social-media-handles a {
+    transition: filter 300ms;
+}
+
+footer .social-media-handles .icon:hover {
+    cursor: pointer;
+    filter: invert(57%) sepia(41%) saturate(2574%) hue-rotate(328deg) brightness(104%) contrast(96%);
+}
