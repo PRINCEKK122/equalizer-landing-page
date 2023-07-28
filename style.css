@@ -97,7 +97,7 @@ header p {
     background-color: hsl(12, 94%, 65%);
     color: hsl(20, 33%, 98%);
     padding: 4.8rem 3.7rem 4.8rem 3.6rem;
-    transform: translateY(-39%);
+    transform: translateY(-37.5%);
 }
 
 .showcase-card h2 {
@@ -135,3 +135,28 @@ header p {
     bottom: 0.3rem;
     margin-left: 0.78rem;
 }
+
+footer {
+    padding: 0 2.4rem;
+    transform: translateY(-50%);
+}
+
+footer img {
+    margin-bottom: 3.2rem;
+}
+
+footer p {
+    line-height: 1.7;
+}
+
+footer .email {
+    font-weight: 700;
+}
+
+footer .social-media-handles {
+    margin-top: 6.4rem;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
