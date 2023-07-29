@@ -17,6 +17,7 @@ html {
 body {
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 1.6rem;
+    overflow-x: hidden;
 }
 
 /* Utilities */
@@ -51,6 +52,7 @@ header {
     background-image: url("./assets/bg-main-mobile.png");
     background-repeat: no-repeat;
     background-position: bottom -8rem right -21rem;
+    overflow-x: hidden;
 }
 
 header .bg-pattern {
@@ -190,6 +192,11 @@ footer .social-media-handles .icon:hover {
         background-origin: border-box, border-box;
         background-size: 120rem 120rem;
         background-position: left -36.5rem top -25rem;
+        
+    }
+
+    main {
+        position: relative;
         overflow-x: hidden;
     }
 
@@ -203,8 +210,8 @@ footer .social-media-handles .icon:hover {
     header .bg-pattern {
         display: block;
         position: absolute;
-        right: -4rem;
-        top: -3.2rem;
+        top: -4rem;
+        right: -3.2rem;
     }
 
     header h1 {
@@ -255,11 +262,13 @@ footer .social-media-handles .icon:hover {
 
     footer {
         position: relative;
-        top: 23rem;
+        top: 15rem;
         display: flex;
         align-items: end;
         justify-content: space-between;
-        margin-bottom: 25rem;
+        margin-bottom: 15rem;
+        margin-left: 3.3rem;
+        margin-right: 3.9rem;
     }
 
     .footer-container {
