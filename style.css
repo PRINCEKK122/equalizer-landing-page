@@ -195,6 +195,7 @@ footer .social-media-handles .icon:hover {
 
     main {
         position: relative;
+        overflow-x: hidden;
     }
 
     header {
