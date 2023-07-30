@@ -52,7 +52,6 @@ header {
     background-image: url("./assets/bg-main-mobile.png");
     background-repeat: no-repeat;
     background-position: bottom -8rem right -21rem;
-    overflow-x: hidden;
 }
 
 header .bg-pattern {
@@ -192,12 +191,10 @@ footer .social-media-handles .icon:hover {
         background-origin: border-box, border-box;
         background-size: 120rem 120rem;
         background-position: left -36.5rem top -25rem;
-        
     }
 
     main {
         position: relative;
-        overflow-x: hidden;
     }
 
     header {
@@ -230,24 +227,19 @@ footer .social-media-handles .icon:hover {
         text-align: left;
     }
 
-    .showcase-image img {
-        width: 27.21rem;
-        height: 55.6rem;
-        transform: translateY(-20%);
-    }
-
     .showcase h2 {
         font-size: 3rem;
     }
 
     .showcase-image img {
+        width: 27.21rem;
+        height: 55.6rem;
         position: relative;
         left: 4.4rem;
     }
 
     .showcase-card {
         width: 40rem;
-        position: relative;
         margin-left: 23.9rem;
         transform: translate(0);
         position: absolute;
@@ -262,16 +254,91 @@ footer .social-media-handles .icon:hover {
 
     footer {
         position: relative;
-        top: 15rem;
-        display: flex;
-        align-items: end;
-        justify-content: space-between;
-        margin-bottom: 15rem;
+        top: 22rem;
+        margin-bottom: 20rem;
         margin-left: 3.3rem;
         margin-right: 3.9rem;
     }
 
     .footer-container {
-        max-width: 36.6rem;
+        display: flex;
+        align-items: center;
+        margin-top: 3.2rem;
+        justify-content: space-between;
+    }
+
+    .social-media-handles {
+        position: relative;
+        bottom: 2.9rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        background-image: url("./assets/bg-main-desktop.png");
+        background-size: cover;
+        font-size: 1.8rem;
+    }
+
+    header {
+        padding-left: 0;
+        max-width: 110rem;
+        margin: 0 auto;
+    }
+
+    header h1 {
+        font-size: 6.8rem;
+        max-width: 70rem;
+        margin-top: 3rem;
+    }
+
+    header .bg-pattern {
+        right: 0;
+    }
+
+    main {
+        position: static;
+        padding-left: 16.5rem;
+        padding-right: 16.5rem;
+    }
+
+    .showcase {
+        max-width: 100rem;
+        width: 100rem;
+        margin-top: 30rem;
+    }
+
+    .showcase-card {
+        transform: translateX(85%);
+    }
+
+    .showcase-image img {
+        width: 31.2rem;
+        height: 64.2rem;
+        transform: translate(30%, -37%);
+    }
+
+    footer {
+        max-width: 110rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-start;
+        padding: 0;
+        margin-bottom: 25rem;
+    }
+
+    footer .footer-container {
+        margin-top: 0;
+        margin-left: 15rem;
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    header h1 {
+        max-width: 100%;
+        font-size: 8.8rem;
     }
 }
