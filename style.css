@@ -60,6 +60,7 @@ header .bg-pattern {
 
 header img {
     margin-bottom: 6.4rem;
+    overflow: hidden;
 }
 
 header h1 {
@@ -185,17 +186,18 @@ footer .social-media-handles .icon:hover {
     }
 
     body {
-        position: relative;
+        /* position: relative; */
         background-image: url("./assets/bg-main-tablet.png");
         background-repeat: no-repeat, no-repeat;
         background-origin: border-box, border-box;
         background-size: 120rem 120rem;
         background-position: left -36.5rem top -25rem;
+        /* overflow-y: hidden; */
     }
 
     main {
         position: relative;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
 
     header {
@@ -203,6 +205,7 @@ footer .social-media-handles .icon:hover {
         padding-left: 3.91rem;
         background-image: none;
         max-width: 52rem;
+        overflow: hidden;
     }
 
     header .bg-pattern {
